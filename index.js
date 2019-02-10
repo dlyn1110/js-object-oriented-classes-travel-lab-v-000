@@ -5,9 +5,8 @@ class Driver {
         this.startDate = new Date(startDate);
     }
 
-    yearsExperienceFromBeginningOf(year){
-        return year - (this.startDate.getFullYear() + 1)
-    }
+    yearsExperienceFromBeginningOf(endDate) {
+         return new Date(endDate, 1, 1).getYear() - this.startDate.getYear() -1
 }
 
 let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
